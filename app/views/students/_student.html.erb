@@ -1,10 +1,11 @@
-<label>Name:</label><br>
-<%= text_field_tag :name, @student.name %><br>
-
-<label>Birthday</label><br>
-<%= text_area_tag :birthday, @student.birthday.strftime("%m/%d/%Y")  %><br>
-
-<label>Student Hometown</label><br>
-<%= text_area_tag :hometown, @student.hometown.capitalize %><br>
-
-
+<ul>
+  <li>
+    Name: <%= @student.name %>
+  </li>
+  <li>
+    Birthday: <%= @student.birthday.strftime("%m/%d/%Y")  %>
+  </li>
+  <li>
+    Hometown: <%= @student.hometown.capitalize %>
+  </li>
+</ul>

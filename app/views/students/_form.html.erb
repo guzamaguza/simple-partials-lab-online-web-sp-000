@@ -1,13 +1,11 @@
-<p>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</p>
-<p>
-  <%= f.label :hometown %>
-  <%= f.text_field :hometown %>
-</p>
-<p>
-  <%= f.label :birthday %>
-  <%= f.date_field :birthday %>
-</p>
-  <%= f.submit %>
+
+<label>Student Name:</label><br>
+<%= text_field_tag :name, @student.name %><br>
+
+<label>Student Hometown</label><br>
+<%= text_area_tag :hometown, @student.hometown %><br>
+
+<label>Student Birthday</label><br>
+<%= text_area_tag :birthday, @student.birthday %><br>
+
+<%= submit_tag "Submit" %>
